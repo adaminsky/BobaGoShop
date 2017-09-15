@@ -1,0 +1,129 @@
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeup {
+    from {
+        opacity: 0;
+        top: 500px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+body {
+    /* Disable text selection, or your app will feel like a web page */
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+
+    /* Cover the whole window */
+    height: 100%;
+
+    /* Make sure this matches the native window background color that you pass to
+     * electron.BrowserWindow({...}), otherwise your app startup will look janky. */
+    
+    /* Smoother startup */
+    animation: fadein 0.5s;
+}
+body {
+    background-color: #e4dfda;
+}
+h1 {
+    text-align: center;
+    font-family: futura;
+}
+#login {
+    text-align: center;
+}
+#email, #pass {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #48a9a6;
+    border-color: #48a9a6;
+    color: #ffffff;
+}
+#loginButton {
+    position: relative;
+    width: 90px;
+    top: 20px;
+    background-color: #c1666b;
+    border-color: #c1666b;
+}
+#loginContainer {
+    position: relative;
+    padding: 30px;
+    background-color: #d4b483;
+    width: 50%;
+    margin: auto;
+    top: 70px;
+}
+#sidebar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 150px;
+    background-color: #d4b483;
+}
+#header {
+    position: relative;
+}
+.sidebutton {
+    padding: 20px;
+    background-color: #dbbf96;
+    margin-top: 10px;
+}
+
+#container {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    right: 0;
+}
+.order {
+    position: relative;
+    background-color: #48a9a6;
+    padding: 20px;
+    overflow: hidden;
+    border-style: solid;
+    border-color: #398583;
+    margin-bottom: 20px;
+    animation: fadeup .5s;
+}
+.quantity {
+    float: left;
+    position: relative;
+    font-size: 100px;
+
+}
+
+.other {
+    float: left;
+    position: relative;
+    left: 20%;
+}
+.drinkname {
+    position: relative;
+    font-size: 40px;
+}
+.options {
+    position: relative;
+    font-size: 20px;
+    left: 30px;
+}
+.customer {
+    position: relative;
+    left: 300px;
+    top: 40px;
+}
+.close {
+    float: right;
+}

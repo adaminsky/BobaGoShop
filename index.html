@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>BobaGo</title>
+    <link rel="stylesheet" type="text/css"  href="index.css" >
+  </head>
+  <body id="main">
+		<div id="loginContainer">
+			<h1> Login </h1>
+      <div id="login" >
+			    <input type="text" id="email" name="username"/>
+			    <input type="password" id="pass" name="password"/>
+			    <input type="button" id="loginButton" value="login" name="login"/>
+      </div>
+		</div>
+  </body>
+  <script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+  <script>window.$ = window.jQuery = require('jquery');</script>
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+</html>
